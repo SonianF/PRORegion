@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px) and (max-device-width: 800px)" href="css/size2.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 801px) and (max-device-width: 1050px)" href="css/size3.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1051px) and (max-device-width: 1200px)" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1201px)" href="css/max.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="css/timeline.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px) and (max-device-width: 800px)" href="css/timeline.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 801px) and (max-device-width: 1050px)" href="css/timeline.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1051px) and (max-device-width: 1200px)" href="css/timeline.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1201px)" href="css/timeline.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px) and (max-device-width: 800px)" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 801px) and (max-device-width: 1050px)" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1051px) and (max-device-width: 1200px)" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1201px)" href="css/slider.css" />
+
+
+    <title>ProРегионы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(98335653, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/98335653" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+</head>
+<body>
+<div class="main">
+    <div class="logo">ProРегионы</div>
+    <div class="text_intro">
+        <h2 class="h2_intro">Исследуй <br>  Самарскую область <br>  с нами</h2>
+        <h3 class="h3_intro">Открой для себя богатую историю, культуру и природную красоту Самарской области с помощью наших интерактивных карт и сюжетов.</h3>
+    </div>
+    <button class="button_intro" onclick="scrollToTarget()">
+        УЗНАТЬ БОЛЬШЕ
+    </button>
+</div>
+
+<div class="intro">
+    <h1 class="h1_intro">Открой для себя <br> уникальные стороны <br> Самарской области</h1>
+    <ul class="intro-container">
+        <li>
+            <img src="./images/icons/history.png" class="emblem">
+            <h2 class="h2_info"> <b>ИСТОРИЯ</b></h2>
+            <p>
+                Совершить увлекательное путешествие сквозь века, наполненное значительными событиями, выдающимися личностями и культурными достижениями. Мы расскажем вам о ключевых моментах, которые сформировали облик нашего края и его жителей.
+            </p>
+        </li>
+        <li>
+            <img src="./images/icons/culture.png" class="emblem">
+            <h2 class="h2_info"> <b>КУЛЬТУРА</b></h2>
+            <p>
+                Оценить богатое наследие, сформировавшееся на протяжении веков и вобравшее в себя традиции, обычаи, искусство и достижения местных жителей.  Через наследие увидеть отражение жизнь и мировосприятие людей, которые здесь жили и продолжают жить.
+            </p>
+        </li>
+        <li>
+            <img src="./images/icons/pers.png" class="emblem">
+            <h2 class="h2_info"> <b>ПЕРСОНАЛИИ</b></h2>
+            <p>
+                Познакомиться c биографиями выдающихся личностей, внесших значительный вклад в развитие нашего региона. Здесь вы найдете информацию о новаторах своих времен, чьи достижения и идеи сформировали нашу с вами реальность.
+            </p>
+        </li>
+        <li>
+            <img src="./images/icons/nature.png" class="emblem">
+            <h2 class="h2_info"> <b>ПРИРОДНЫЕ БОГАТСТВА</b></h2>
+            <p>
+                Узнать подробнее об уникальном природном наследии земли Самарской, которое включает в себя разнообразные ландшафты, богатую флору и фауну, узнать подробнее вы сможете на платформе.
+            </p>
+        </li>
+        <li>
+            <img src="./images/icons/national.png" class="emblem">
+            <h2 class="h2_info"> <b>НАЦИОНАЛЬНЫЕ ОСОБЕННОСТИ</b></h2>
+            <p>
+                Узнаем какие народы сформировали местные выражения и фразеологизмы, которые мы используем в повседневной жизни, а также создают особую атмосферу общения и позволяют лучше понять местные традиции.
+            </p>
+        </li>
+    </ul>
+</div>
+<div class="slider" role="region" aria-label="Паттерны" id="inform">
+    <div class="controls" role="group" aria-label="Управление слайдами">
+        <div class="button-radio-container">
+            <button class="button button-radio" type="button" aria-current="true" aria-label="Показать 1 из 5"></button>
+            <button class="button button-radio" type="button" aria-label="Показать 2 из 5"></button>
+            <button class="button button-radio" type="button" aria-label="Показать 3 из 5"></button>
+            <button class="button button-radio" type="button" aria-label="Показать 4 из 5"></button>
+            <button class="button button-radio" type="button" aria-label="Показать 5 из 5"></button>
+        </div>
+        <div class="navigation-buttons">
+            <button aria-label="Предыдущий" type="button" class="button button-prev"></button>
+            <button aria-label="Следующий" type="button" class="button button-next"></button>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="elem">
+            <div class=" elem image-container">
+                <div class="img_cont">
+                    <div class="img_cont">
+                        <div class="image-container">
+                            <img src="images/map_of_nature.png" class="elem_img background-image" id="yearImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elem_text">
+                <div class="r_elem" id="info">
+                    <div class="flex-parent">
+                        <h2 class="h2_text" id="year">Самарская область в <span id="yearValue">2024</span> году</h2>
+                        <div class="description-flex-container" >
+                            <p class="text">Первое историческое упоминание о местности, на которой позже возникла Самара, относится к 1357 году, когда Святой Алексий, митрополит Московский и Всея Руси, на пути из Орды посетил «жившего близ устья реки Самары благочестивого пустынника и, взирая на счастливое местоположение окрестностей, предрёк существование большого города «…в котором просияет благочестие и который никакому разорению подвержен не будет».</p>
+                            <p class="text">В 1586 году по Указу царя Фёдора Иоановича начали строить крепость на реке Волга, которую назвали Самарский городок, с целью защиты Руси от набегов кочевников и обеспечения судоходства от Казани до Астрахани. Руководителем строительства был назначен воевода – князь Г.О. Засекин, который начал строить город на правом берегу реки Самары. Через Самару много раз следовали русские и иноземные посольства. В числе иностранных дипломатов и путешественников были здесь немец Адам Олеарий и голландец Корнилий де Бруи, оставившие самые ранние описания Самары и достопримечательных мест. <br></p>
+                            <p class="text">15 сентября 1780 г. был издан указ Екатерины II об образовании Симбирского наместничества (губернии). Сюда отошла основная часть Самарского края. Земли на Самарской Луке, по нижнему течению Сока, Кондурчи, Самары, Мочи, Безенчука и далее на запад по левому берегу Волги образовали Самарский уезд. Территории к северу и западу от Самарской Луки вошли соответственно в Сенгилеевский и Сызранский уезды. Левый берег Волги к северу от Луки до реки Черемшан и за неё оказался в Ставропольском уезде.</p>
+                            <p class="text">6 декабря 1850 года император Николай I издал Указ Правительствующему Сенату о создании с 1 января 1851 года Самарской губернии, центром которой стала Самара с населением в 20 тысяч жителей. Новая губерния состояла из семи уездов: Самарского, Ставропольского, Бугульминского, Бугурусланского, Бузулукского, Николаевского и Новоузенского. Жителей числилось 1 529 343 душ обоего пола. Всех поселений насчитывалось 2022, из них городов – 8. По данным на 1856 года городское население составляло 3,19%, сельское – 96,81%.</p>
+                            <p class="text_a_lot">В 1941-1943 годах Куйбышев (в 1935 году Самара была переименована в город Куйбышев) почти на три года стал второй столицей СССР. Cюда были эвакуированы правительственные органы, часть военных управлений и весь дипломатический корпус — 20 посольств и миссий. Специально для Сталина в Самаре был построен уникальный подземный бункер, прекрасно сохранившийся до наших дней. Сюда же эвакуировали труппу Большого Театра, здесь в эвакуации жили совестские писатели и известный композитор Дмитрий Шостакович. В Самару же эвакуировали крупнейшие оборонные заводы, дававшие продукцию для фронта.Всей стране известны имена наших земляков: Героев Советского Союза легендарной летчицы Ольги Санфировой и летчика Вадима Фадеева.</p>
+                            <p class="text_a_lot active"> Самарская область вот уже как 173 года является сердцем России. Именно сердце стало официальным графическим символом области. зелёного цвета, с голубой волнообразной полосой посередине – этот ёмкий знак вобрал в себя  ключевые характеристики региона: географическую форму на карте, цвета богатейшей природы Самарской луки и Жигулёвских гор,  великую реку Волгу, протекающую здесь. Самарская область является родиной лидера отечественного машиностроения - АВТОВАЗА, именно здесь чуть больше, чем 50 лет назад зародился Грушинский фестиваль. Самарская область также известна как центр русского пивоварения (Жигулевское пиво) и колыбель легендарного отечественного шоколада (фабрика "Россия - щедрая душа"). </p>
+                        </div>
+                        <div class="input-flex-container" id="timeline">
+                            <div class="input" data-image="images/1357.jpg">
+                                <span data-year="1357"></span>
+                            </div>
+                            <div class="input" data-image="images/1586.jpg">
+                                <span data-year="1586" ></span>
+                            </div>
+                            <div class="input" data-image="images/1780.jpg">
+                                <span data-year="1780"></span>
+                            </div>
+                            <div class="input" data-image="images/1851.jpg">
+                                <span data-year="1851"></span>
+                            </div>
+                            <div class="input" data-image="images/1941.jpg">
+                                <span data-year="1941"></span>
+                            </div>
+                            <div class="input active"  data-image="images/map_of_nature.png">
+                                <span data-year="2024"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="js/timeline.js"></script>
+                    <script src="js/slider.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="elem">
+            <div class=" elem image-container">
+                <div class="img_cont">
+                    <div class="image-container">
+                        <img src="images/map_2024.png" class="elem_img background-image">
+                        <div class="point_mount city_point" style="top: 53%; left: 45%;" data-name="Самара" data-city="0">Самара</div>
+                        <div class="point_mount city_point" style="top: 35%; left: 28%;" data-name="Тольятти" data-city="1">Тольятти</div>
+                        <div class="point_mount city_point" style="top: 48%; left: 5%;" data-name="Сызрань" data-city="2">Сызрань</div>
+                    </div>
+                </div>
+            </div>
+            <div class="elem_text">
+                <div class="r_elem">
+                    <div class="flex-parent">
+                        <h2 class="h2_text"><span id="cityValue"></span></h2>
+                        <div class="description-flex-container" id="info_city">
+                            <p class="active text_a_lot text-city"></p>
+                            <div style="text-align: center; margin-top: 1%;">
+                                <img class="pict_city active"  id="cityImage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/map.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/city_in_map.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/people_in_pict.js"></script>
+    </div>
+    <div class="slide">
+        <div class="elem">
+            <div class=" elem image-container">
+                <div class="img_cont">
+                    <div class="image-container">
+                        <img src="images/map_of_nature.png" class="elem_img" alt="Map of Nature">
+                        <div class="point_mount" style="top: 43%; left: 34%; background-color: #0aa50a;" data-name="Молодецкий курган" data-target="0"></div>
+                        <div class="point_mount" style="top: 40.5%; left: 48%;  background-color: #0aa50a;" data-name="Царев курган" data-target="1"></div>
+                        <div class="point_mount" style="top: 47%; left: 27.5%;    background-color: #0aa50a;" data-name="Усинский курган" data-target="2"></div>
+                        <div class="point_mount" style="top: 43.3%; left: 31.5%;    background-color: #0aa50a;" data-name="Лысая гора" data-target="3"></div>
+                        <div class="point_mount" style="top: 47%; left: 14%; background-color: darkgreen;" data-name="Рачеевский бор" data-target="4"></div>
+                        <div class="point_mount" style="top: 44%; left: 50%; background-color: saddlebrown" data-name="Пещера братьев Греве" data-target="5"></div>
+                        <div class="point_mount" style="top: 46%; left: 51%;     background-color: #0aa50a;" data-name="Сокольи горы" data-target="6"></div>
+                        <div class="point_mount" style="top: 36%; left: 70%; background-color: dodgerblue;" data-name="Голубое озеро" data-target="7"></div>
+                        <div class="point_mount" style="top: 65%; left: 80%; background-color: darkgreen;" data-name="Бузулуксий бор" data-target="8"></div>
+                        <div class="point_mount" style="top: 47.3%; left: 30%; background-color: saddlebrown" data-name="Пещера Степана Разина" data-target="9"></div>
+                        <div class="point_mount" style="top: 43%; left: 39%; background-color: saddlebrown" data-name="Ширяевские штольни" data-target="10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="elem_text">
+                <div class="r_elem">
+                    <div class="flex-parent">
+                        <h2 class="h2_text"><span id="nameValue"></span></h2>
+                        <div class="description-flex-container" id="info_nature">
+                            <p class="active text-nature">Самарская область славится своей уникальной заповедной природой, которая включает в себя разнообразные природные зоны, пещеры, горные массивы, озера и реки. На территории области расположены несколько особо охраняемых природных территорий, такие как Жигулёвский заповедник и Национальный парк \"Самарская Лука\", Рачейский бор, Васильевские острова и другие. Главной водной артерией региона является Волга, но помимо её есть и другие значительные реки: Сок, Большой Кинель, Большой Иргиз и Кондурча и, конечно, река Самара.
+                            </p>
+                            <div style="text-align: center; margin-top: 3%">
+                                <img class="nature_pict active"  id="natureImage">
+                            </div>
+                        </div>
+                        <div id="popup" class="popup">
+                            <div class="popup-content">
+                                <span class="close" id="closePopup"><img src="images/button_close.png"></span>
+                                <div >
+                                    <img id="popupImage" src="images/nature/auto.png" alt="Popup Image" class="popup-image">
+                                    <p class="signature" style="color: white;">Заповедная природа региона</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/map.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/point_in_map.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </div>
+    <div class="slide">
+        <div class="elem">
+            <div class=" elem image-container">
+                <div class="img_cont">
+                    <div class="image-container">
+                        <img src="images/people_map.png" class="elem_img" alt="Map of People">
+                        <img class="people_pict" style="top: 38%; left: 56%; max-width: 450px" data-name="Петр Владимирович Алабин" data-value="0" src="images/people/alabin.png">
+                        <img class="people_pict" style="top: 8%; left: 75%; max-width: 450px" data-name="Василий Никитич Татищев" data-value="1" src="images/people/tatischev.png">
+                        <img class="people_pict" style="top: 19%; left: 58%; max-width: 450px" data-name="Григорий Сергеевич Аксаков" data-value="2" src="images/people/aksakov.png">
+                        <img class="people_pict" style="top: 30%; left: 73%; max-width: 450px" data-name="Константин Павлович Головкин" data-value="3" src="images/people/golovkin.png">
+                        <img class="people_pict" style="top: 21%; left: 88%; max-width: 450px" data-name="Альфред Филиппович Фон Вакано" data-value="4" src="images/people/vacano.png">
+                        <img class="people_pict" style="top: 48%; left: 82%; max-width: 450px" data-name="Алексей Николаевич Толстой" data-value="5" src="images/people/tolstoy_a.png">
+                        <img class="people_pict" style="top: 62%; left: 20%; max-width: 450px" data-name="Николай Дмитриевич Кузнецов" data-value="6" src="images/people/kyznezhov.jpg">
+                        <img class="people_pict" style="top: 54%; left: 50%; max-width: 450px" data-name="Иван Гурьянович Булкин" data-value="7" src="images/people/bylkin.png">
+                        <img class="people_pict" style="top: 43%; left: 19%; max-width: 450px" data-name="Купцы Субботины" data-value="8" src="images/people/subbotins.png">
+                        <img class="people_pict" style="top: 70%; left: 43%; max-width: 450px" data-name="Купцы Шихобаловы" data-value="9" src="images/people/shihobalov.png">
+                        <img class="people_pict" style="top: 70%; left: 68%; max-width: 450px" data-name="Купцы Клодт" data-value="10" src="images/people/house_c.jpg">
+                        <img class="people_pict" style="top: 52%; left: 66%; max-width: 450px" data-name="Александр Александрович Щербачёв" data-value="11" src="images/people/scherbachev.jpg">
+                        <img class="people_pict" style="top: 36%; left: 37%; max-width: 450px" data-name="Григорий Николаевич Журавлёв" data-value="12" src="images/people/zhuravlev.jpg">
+                        <img class="people_pict" style="top: 81%; left: 57%; max-width: 450px;" data-name="Ольга Александровна Санфирова" data-value="13" src="images/people/sanfirova.png">
+                        <img class="people_pict" style="top: 56%; left: 35%; max-width: 450px" data-name="Ольга Александровна Санфирова" data-value="14" src="images/people/rysanov.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="elem_text">
+                <div class="r_elem">
+                    <div class="flex-parent">
+                        <h2 class="h2_text"><span id="peopleValue">САМАРская  область В ИМЕНАХ И ЛИЦАХ</span></h2>
+                        <h3 class="h3_text" id="yearPeople"></h3>
+                        <div class="description-flex-container" id="info_people">
+                            <p class="active text_people"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/map.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/point_in_map.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/people_in_pict.js"></script>
+    </div>
+    <div class="slide">
+        <div class="elem">
+            <div class=" elem image-container">
+                <img src="images/map_of_national.png" class="elem_img background-image">
+            </div>
+            <div class="elem_text">
+                <div class="r_elem">
+                    <div class="flex-parent">
+                        <h2 class="h2_text">НАЦИОНАЛЬНЫЕ ОСОБЕННОСТИ региона</h2>
+                        <div class="description-flex-container">
+                            <p class="active text_a_lot"> Самарская область – многонациональный регион, на ее территории проживают представители 157 национальностей и 14 этнических групп.
+                                Согласно последней переписи населения, национальный состав населения распределён примерно следующим образом: русские — 2 720 090 (85.55%) человек, татары — 129 725 (4.08%) человек, чуваши — 86 483 (2.72%) человека, мордва — 67 406 (2.12%) человек, украинцы — 43 242 (1.36%) человека, другие национальности (менее 0,5% каждая) — 132 586 (4.17%).
+                            </p>
+                            <div style="text-align: center; margin: 2%;">
+                                <img style="width: 90%"  src="images/a_lot.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/map.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/point_in_map.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </div>
+
+</div>
+<script src="js/map.js"></script>
+<script src = "js/slider.js" ></script>
+<script>
+    function scrollToTarget() {
+        document.getElementById('inform').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+
+<div class="oldtown" >
+    <div class="new_elem">
+        <div class=" new_elem_pict image-container">
+            <img src="images/modern.jpg" class="new_elem_img background-image">
+            <div class="street necras" data-name="Некрасовская" data-street="0"></div>
+            <div class="street lening" data-name="Ленинградская" data-street="1"></div>
+            <div class="street venz" data-name="Венцека" data-street="2"></div>
+            <div class="street samars" data-name="Самарская" data-street="3"></div>
+            <div class="street kuyb" data-name="Куйбышева" data-street="4"></div>
+            <div class="street lev" data-name="Льва Толстого" data-street="5"></div>
+            <div class="street vilon" data-name="Вилоновская" data-street="6"></div>
+            <div class="street krasnoarm" data-name="Красноармейская" data-street="7"></div>
+            <div class="street sadov" data-name="Садовая" data-street="8"></div>
+            <div class="street frunze" data-name="Фрунзе" data-street="9"></div>
+            <div class="street rasin" data-name="Степана Разина" data-street="10"></div>
+            <div class="street alex" data-name="Алексея Толстого" data-street="11"></div>
+            <div class="street gorkiy" data-name="Максима Горького" data-street="12"></div>
+            <div class="street chapaev" data-name="Чапаевская" data-street="13"></div>
+            <div class="street lenin" data-name="Ленинская" data-street="14"></div>
+            <img src="images/streets/sam_filarm.png" class="sam_filarm">
+            <img src="images/streets/cinema.png" class="cinema">
+            <img src="images/streets/building_soc.png" class="building_soc">
+            <img src="images/streets/house_kurl.png" class="house_kurl">
+            <img src="images/streets/house_novo.png" class="house_novo">
+            <img src="images/streets/bank.png" class="bank">
+            <img src="images/streets/house_golovkin.png" class="house_golovkin">
+            <img src="images/streets/house_hogol.png" class="house_hogol">
+            <img src="images/streets/house_schetin.png" class="house_schetin">
+            <img src="images/streets/house_tor.png" class="house_tor">
+            <img src="images/streets/hotel.png" class="hotel">
+            <img src="images/streets/pushkin.png" class="pushkin">
+            <img src="images/streets/rest.png" class="rest">
+            <img src="images/streets/square_rev.png" class="square_rev">
+            <img src="images/streets/himnazia.png" class="himnazia">
+            <img src="images/streets/shihobalov.png" class="shihobalov">
+            <img src="images/streets/house_sur.png" class="house_sur">
+            <img src="images/streets/aero.png" class="aero">
+            <p style="margin-top: 0.5%; margin-bottom: 0; text-align: center; color: darkred" class="great-vibes-regular card"> Карта самарского модерна от художника Александра Торчинова.</p>
+        </div>
+        <div class="new_elem_text">
+            <div class="r_elem">
+                <div class="flex-parent">
+                    <h2 class="h2_text"><span id="streetValue"></span></h2>
+                    <div class="description-flex-container" style="width: 90%">
+                        <p class="active text_oldtown"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/streets_in_map.js"></script>
+
+
+<div class="footer">
+    <div class="footer-container">
+        <h1 class="samara" style="margin-top: 1%">Знакомься с достопримечательностями столицы региона</h1>
+        <img src="images/footer-top.png" style="max-width:100%; transform: scaleY(-1);">
+    </div>
+        <ul class="popular_place">
+            <li>
+                <img src="images/place/ladya.png" class="foto" data-place="Монумент «Самарская ладья»" id="foto0">
+            </li>
+            <li>
+                <img src="images/place/fabric.jpg" class="foto" data-place="Фабрика-кухня" id="foto1">
+            </li>
+            <li>
+                <img src="images/place/theatre.png" class="foto" data-place="Самарский академический театр драмы имени М. Горького" id="foto2">
+            </li>
+            <li>
+                <img src="images/place/cosmos.jpg" class="foto" data-place="Музейно-выставочный центр «Самара космическая»" id="foto3">
+            </li>
+            <li>
+                <img src="images/place/glory-square-samara.jpg" class="foto" data-place="Площадь Славы" id="foto4">
+            </li>
+            <li>
+                <img src="images/place/art_musem.jpg" class="foto" data-place="Самарский областной художественный музей" id="foto5">
+            </li>
+        </ul>
+    <div id="popup_new" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeNewPopup"><img src="images/button_close.png"></span>
+            <div >
+                <img id="popupNewImage" src="images/nature/auto.png" alt="Popup Image" class="popup-image">
+                <p class="signature"  id="new_signature" style="color: white; font-family: Mulish; font-size: 24px"></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <h1 class="samara" style="margin-top: 7%;">Благодарим за посещение сайта!</h1>
+        <p class="samara" style="margin-top: 12%; text-align: center; font-family: Mulish;">Мы хотим стать лучше, поэтому просим пройти опрос по <b><a href="https://forms.gle/kSQ1DiAKLc2NpQs6A" style="color: #FFFFFF">ссылке</a></b></p>
+        <p class="samara" style="margin-top: 17%; text-align: center; font-family: Mulish; font-size: 14px">© Информационно-просветительский проект ProРегионы 2024</p>
+        <img src="images/footer.png" style="max-width:100%;  display: block;">
+    </div>
+</div>
+
+</body>
+</html>
