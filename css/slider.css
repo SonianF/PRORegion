@@ -1,0 +1,82 @@
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 20px;
+}
+
+.button-radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-radio {
+    background-color: #B8B8B8;
+    margin: 0;
+    padding: 0;
+    inline-size: 30px;
+    block-size: 30px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+
+.button-radio + .button-radio {
+    margin-inline-start: 12px;
+}
+
+.button-radio.active {
+    background-color: #0552B5;
+    pointer-events: none;
+}
+
+.button-radio:focus-visible {
+    outline: 3px solid #B8B8B8;
+    outline-offset: -1px;
+}
+
+.button-prev,
+.button-next {
+    border: none;
+    inline-size: 70px;
+    block-size: 70px;
+    background-color: transparent;
+    background-image: url(/images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.button-prev[aria-disabled="true"],
+.button-next[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.button-prev {
+    margin-left: 20px;
+}
+
+.button-next {
+    margin-left: 20px;
+    transform: rotateY(180deg);
+}
+
+.slider {
+    position: relative; /* Относительное позиционирование для размещения элементов */
+    /*width: 100%; !* Ширина слайдера *!*/
+    /*max-width: 1200px; !* Максимальная ширина слайдера *!*/
+    margin: 0 auto; /* Центрирование слайдера */
+    overflow: hidden; /* Скрытие переполнения */
+}
+
+.slide {
+    display: none; /* Скрываем все слайды по умолчанию */
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.5s ease; /* Плавный переход для прозрачности */
+}
+
+.slide--active {
+    display: block; /* Показываем активный слайд */
+    opacity: 1; /* Устанавливаем полную непрозрачность */
+}

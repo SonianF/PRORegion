@@ -1,0 +1,156 @@
+
+
+:root {
+    --numDots: 20;
+    --parentWidthBase: 0.35;
+    --parentWidth: calc(var(--parentWidthBase) * 100vw);
+    --parentMaxWidth: 1000px;
+    --dotWidth: 25px;
+    --dotWidthSm: 17px;
+    --active: #0552b5;
+    --inactive: #96bfef;
+}
+
+
+h1 {
+    text-align: center;
+    height: 38px;
+    margin: 60px 0;
+}
+
+h1 span {
+    white-space: nowrap;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: var(--parentWidth);
+    height: 20px;
+    max-width: var(--parentMaxWidth);
+    position: absolute;
+    z-index: 0;
+    margin-left: 5%;
+    margin-block:5%;
+}
+
+.input {
+    width: var(--dotWidth);
+    height: var(--dotWidth);
+    background-color: var(--active);
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.input:hover {
+    background-color: var(--inactive);
+}
+
+.input::before, .input::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--active);
+    width: calc(3*var(--parentWidth) / var(--numDots));
+    height: 5px;
+    max-width: calc(2.7*var(--parentMaxWidth) / var(--numDots));
+}
+
+.input::before {
+    left: calc((-2.7 * var(--parentWidth) / var(--numDots)) + (var(--dotWidth) / 2));
+}
+
+.input::after {
+    right: calc((-2.7 * var(--parentWidth) / var(--numDots)) + (var(--dotWidth) / 2));
+}
+
+.input.active {
+    background-color: var(--active);
+}
+
+.input.active::before {
+    background-color: var(--active);
+}
+
+.input.active::after {
+    background-color: var(--inactive);
+}
+
+.input.active span {
+    font-weight: 700;
+}
+
+.input.active span::before {
+    font-size: 13px;
+}
+
+.input.active span::after {
+    font-size: 15px;
+}
+
+.input.active ~ .input, .input.active ~ .input::before, .input.active ~ .input::after {
+    background-color: var(--inactive);
+}
+
+.input span {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.input span::before, .input span::after {
+    visibility: visible;
+    position: absolute;
+    left: 50%;
+}
+
+.input span::after {
+    content: attr(data-year);
+    top: 25px;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.input span::before {
+    content: attr(data-info);
+    top: -65px;
+    width: 70px;
+    transform: translateX(-5px) rotateZ(-45deg);
+    font-size: 12px;
+    text-indent: -10px;
+}
+
+.description-flex-container {
+    width: var(--parentWidth);
+    font-weight: 400;
+    max-width: var(--parentMaxWidth);
+}
+
+.description-flex-container p {
+    margin-top: 0;
+    display: none;
+    margin-bottom: 15%;
+}
+
+.description-flex-container p.active {
+    display: block;
+    margin-bottom: 0;
+}

@@ -1,0 +1,514 @@
+@font-face {
+    font-family: 'Soledago';
+    src: url('/fonts/Soledago.ttf') format('truetype');
+    font-weight: 400;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mulish {
+    font-family: "Mulish";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    list-style-type: none; /* Убирает буллиты */
+}
+
+
+.logo{
+    font-family: 'Soledago';
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 10%;
+}
+
+.h2_info {
+    margin-top: 40px;
+}
+
+.main {
+    background-image: url('../images/ladya.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: white;
+linear-gradient(#58A3E2, #295275, #071927);
+    font-size: 24px;
+    .h2_intro{
+        font-family: Soledago;
+        font-size: 170%;
+        margin-right: 30%;
+        text-align: left;
+        margin-bottom: 1%;
+        margin-left: 15%;
+    }
+    .h3_intro {
+        margin-right: 48%;
+        margin-left: 15%;
+        text-align: left;
+        font-family: Mulish;
+        font-size: 70%;
+
+    }
+
+    .button_intro{
+        background-color: white;
+        border-radius: 30px;
+        padding: 1% 20px;
+        margin-left: 15%;
+        margin-top: 3.5%;
+        border: none;
+        margin-bottom: 5.5%;
+        font-family: Mulish;
+
+    }
+
+}
+
+.intro {
+    margin-top: 1%;
+    background-image: url('../images/фон-каракуля.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 1%;
+    padding: 1%;
+    list-style-type: none;
+    border: 0;
+}
+
+.intro-container li {
+    background-color: white;
+    margin: 3%;
+    padding: 1%;
+    border: 1px solid gray;
+    width: 23%; /* Ширина по умолчанию */
+    text-align: center;
+    font-family: Mulish;
+    box-shadow: 0 0 10px grey;
+    position: relative;
+    font-size: 60%;
+}
+
+.emblem {
+    position: absolute; /* Абсолютное позиционирование для эмблемы */
+    padding: 0;
+    top: -35px; /* Закрепляем на верхней границе контейнера */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Сдвигаем влево на половину ширины эмблемы */
+    z-index: 10; /* Устанавливаем z-index, чтобы эмблема была выше других элементов */
+}
+
+.h2_info{
+    margin-top: 40px;
+    font-size: 115%;
+}
+
+.h1_intro {
+    padding-top: 5%;
+    margin-top: 1%;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: Soledago;
+    color: white;
+    margin-left: 21%;
+}
+
+/*карта*/
+.elem{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Создаем 12 колонок одинаковой ширины */
+    gap: 20px; /* Промежуток между колонками */
+    margin: 3.5% 1%;
+    max-height: 500px;
+
+    .elem_text {
+        grid-column: span 6;
+        box-shadow: 0 0 10px grey;
+        padding: 2%;
+        margin-right: 5%;
+        background-color: #FFFFFF;
+        font-size: 21px;
+        color: black;
+        font-family: 'Mulish';
+        position: relative;
+
+
+        .h2_text {
+            font-family: 'Soledago';
+            text-align: center;
+            font-size: 16px;
+            margin: 1%;
+        }
+
+    }
+}
+.h3_text{
+    font-family: Soledago;
+    margin: 0.5% 6%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    grid-column: span 6;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.img_cont {
+    width: 100%;
+}
+
+.elem_img {
+    grid-column: span 6;
+    width: auto;
+    object-fit: cover;
+    max-width: 450px;
+}
+
+.text{
+    font-size: 18px;
+    width: 107%;
+    margin-left: 0;
+}
+.text_a_lot {
+    font-size: 16px;
+}
+
+.text-nature {
+    font-size: 15px;
+    width: 107%;
+}
+
+.point_mount:hover {
+    opacity: 0.6;
+}
+.point_mount:checked {
+    zoom: 1.6;
+}
+
+img.nature_pict{
+    width: 60%;
+}
+
+.point_mount {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-family: Mulish;
+    font-size: 14px;
+}
+
+
+.popup {
+    display: none; /* Скрываем попап по умолчанию */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина на весь экран */
+    height: 100%; /* Высота на весь экран */
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    z-index: 1000; /* Поверх остальных элементов */
+}
+
+.popup-content {
+    position: relative; /* Относительное позиционирование для содержимого */
+    text-align: center;
+}
+
+.popup-image {
+    max-width: 50%;
+    max-height: 60%;
+    text-align: center;
+}
+
+.close {
+    position: absolute; /* Абсолютное позиционирование для кнопки закрытия */
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer; /* Указатель при наведении */
+}
+
+
+.input-flex-container {
+    position: sticky;
+    bottom: 3%;
+}
+
+.people_pict{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.pict_people {
+    width: 50%;
+}
+
+.text_people {
+    font-size: 13px;
+    width: 110%;
+    margin-left: -3%;
+}
+
+.text-city{
+    font-size: 12px;
+}
+
+.pict_city{
+    width: 72%;
+}
+
+.oldtown {
+    display: block; /* Показываем активный слайд */
+    opacity: 1; /* Устанавливаем полную непрозрачность */
+}
+
+.new_elem{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 3% 1%;
+
+    .new_elem_text {
+        grid-column: span 4;
+        box-shadow: 0 0 20px #d7d7d7;
+        padding: 1% 2%;
+        margin-right: 1%;
+        background-color: #FFFFFF;
+        font-size: 12px;
+        color: black;
+        font-family: 'Mulish';
+        position: relative;
+    }
+
+    .new_elem_pict {
+        grid-column: span 8;
+        padding: 2%;
+        margin-right: 5%;
+        background-color: #FFFFFF;
+        position: relative;
+    }
+
+    .h2_text{
+        font-family: Soledago;
+        margin: 1%;
+    }
+
+    .text_oldtown{
+        font-size: 11px;
+    }
+}
+
+.new_elem_img{
+    width: 100%;
+}
+
+
+.popular_place {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 1%;
+    padding: 1%;
+    list-style-type: none;
+    border: 0;
+}
+
+.popular_place li {
+    background-color: white;
+    margin: 0.4%;
+    padding: 0.3%;
+    border: 1px solid white;
+    width: 15%; /* Ширина по умолчанию */
+    text-align: center;
+    font-family: Mulish;
+    position: relative;
+}
+
+.foto{
+    width: 110%;
+}
+
+.samara{
+    color: #0552B5;
+    margin-left: 0;
+    position: absolute;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: Soledago;
+    z-index: 10;
+    width: 70%;
+}
+
+.samara p {
+    margin-top: 10%;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 15px;
+}
+
+.samara h1{
+    font-size: 44px;
+}
+
+.street{
+    position: absolute;
+    height: 12px;
+    cursor: pointer;
+    font-family: Mulish;
+    font-size: 15px;
+    background-color: #b8de93;
+    opacity: 0.3;
+}
+
+.card{
+    font-size: 60%;
+}
+
+.necras{
+    top: 58.5%; left: 28%; transform: rotate(23deg); width: 64%; height: 2%;
+}
+.lening{
+    top: 70.5%; left: 22%; transform: rotate(23deg); width: 71%; height: 2%;
+}
+.venz{
+    top: 76.7%; left: 17%; transform: rotate(23deg); width: 48%; height: 1.8%;
+}
+.samars {
+    top: 50.5%; left: 42.5%; transform: rotate(-67deg); width: 62%; height: 3%;
+}
+.kuyb{
+    top: 54%; left: 13.1%; transform: rotate(-67deg); width: 58%; height: 2%;
+}
+.lev{
+    top: 46%; left: 36%; transform: rotate(22deg); width: 61%; height: 2%;
+}
+.vilon{
+    top: 13.9%; left: 56%; transform: rotate(21deg); width: 40%; height: 1.1%;
+}
+.krasnoarm{
+    top: 34%; left: 39%; transform: rotate(22deg); width: 59%; height: 1.5%;
+}
+.sadov{
+    top: 51.5%; left: 48%; transform: rotate(-67deg); width: 62%; height: 2%;
+}
+.frunze{
+    top: 46.5%; left: 15.4%; transform: rotate(-67.5deg); width: 70%; height: 2%;
+}
+.rasin{
+    top: 61.5%; left: 12%; transform: rotate(-67deg); width: 45%; height: 2%;
+}
+.alex{
+    top: 62.5%; left: 5.7%; transform: rotate(-66.2deg); width: 45%; height: 2%;
+}
+.gorkiy{
+    top: 47.5%; left: -1%; transform: rotate(-52deg); width: 60%; height: 2%;
+}
+.chapaev{
+    top: 50.9%; left: 30.1%; transform: rotate(-67deg); width: 62.7%; height: 2%;
+}
+.lenin{
+    top: 66.5%; left: 61.3%; transform: rotate(-66.2deg); width: 38%; height: 2%;
+}
+.sam_filarm{
+    top: 36.81%; left: 44.8%; position: absolute; width: 15%
+}
+.cinema{
+    top: 8.1%; left: 84.2%; position: absolute; width: 16%
+}
+.building_soc{
+    top: 9.2%; left: 44%; position: absolute; width: 16%
+}
+.house_kurl{
+    top: 25.1%; left: 51.8%; position: absolute; width: 13%;
+}
+.house_novo {
+    top: 17.2%; left: 52%; position: absolute; width: 9%;
+}
+.bank{
+    top: 61.6%; left: 38.6%; position: absolute; width: 4.5%;
+}
+.house_golovkin{
+    top: 51.3%; left: 34.4%; position: absolute; width: 7.9%
+}
+.house_hogol{
+    top: 44.4%; left: 65.1%; position: absolute; width: 10%;
+}
+.house_schetin{
+    top: 49%; left: 54%; position: absolute; width: 11%;
+}
+.house_tor{
+    top: 66.4%; left: 46.95%; position: absolute; width: 10%;
+}
+.hotel{
+    top: 46.1%; left: 40.01%; position: absolute;  width: 12.4%;
+}
+.pushkin{
+    top: 47.1%; left: 76.3%; position: absolute; width: 11%;
+}
+.rest{
+    top: 55.75%; left: 68.7%; position: absolute; width: 11%;
+}
+.square_rev{
+    top: 66.5%; left: 33.1%; position: absolute; width: 6%;
+}
+.himnazia{
+    top: 18.5%; left: 73.6%; position: absolute; width: 20%;
+}
+.shihobalov{
+    top: 78%; left: 42.4%; position: absolute; width: 11%;
+}
+.house_sur{
+    top: 72.1%; left: 21.6%; position: absolute; width: 7%;
+}
+.aero{
+    top: 73.9%; left: 78.75%;  position: absolute; width: 9%;
+}
+
+@-moz-document url-prefix() {
+    .h1_intro{
+        padding-top: 5%;
+        margin-top: 1%;
+        font-size: 160%;
+        text-align: center;
+        margin-bottom: 2%;
+        font-family: Soledago;
+        color: white;
+        margin-left: 5%;
+    }
+}
